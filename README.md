@@ -13,8 +13,8 @@ No build step. Open `index.html` in a browser, or serve the folder with any stat
 - `app.js` typing engine and UI logic
 - `style.css` styling
 
-## AI disclosure
-This project was written with help from Claude. Snippets should be verified in a real compiler or interpreter before merging; see CONTRIBUTING.md.
+## Contributing
+Snippets should be verified in a real compiler or interpreter before merging; see CONTRIBUTING.md.
 
 ## License
 MIT
