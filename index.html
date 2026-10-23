@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>keytype — learn a language while you type</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><div class="brand">key<span>type</span></div>
+    <div class="tag">type real syntax and DSA, learn what it does as you go</div></div>
+    <button class="theme" id="themeBtn">theme</button>
+  </header>
+  <div class="tabs"><button id="tabCourse">Course</button><button id="tabPractice">Practice</button></div>
+  <div id="courseCtl"><div class="row" id="cLangs"></div><div class="track" id="track"></div><div class="plabel" id="plabel"></div></div>
+  <div id="practiceCtl" hidden><div class="row" id="pDiff"></div><div class="row" id="pType"></div><div class="row" id="pLangs"></div></div>
+  <div class="editor">
+    <div class="etab"><span class="fname" id="fname"></span><span id="badges"></span></div>
+    <div class="area" id="area"><div class="grid"><div class="gutter" id="gutter"></div><div class="code" id="code"></div></div>
+    <textarea id="input" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"></textarea></div>
+    <div class="hint"><span id="hint">click the code and start typing</span><span>esc: restart</span></div>
+    <div class="bar">
+      <div class="stat"><b id="wpm">0</b><i>wpm</i></div><div class="stat"><b id="acc">100%</b><i>accuracy</i></div><div class="stat"><b id="time">0.0s</b><i>time</i></div>
+      <div class="acts"><button class="btn" id="restart">Restart</button><button class="btn pri" id="next">Next</button></div>
+    </div>
+  </div>
+  <div class="concept" id="concept"><div class="eyebrow">what you just typed</div><h2 id="cTitle"></h2><p id="cBody"></p><div id="cMeta"></div><button class="btn pri" id="next2">Next →</button></div>
+  <div class="foot" id="foot"></div>
+</div>
+<script src="data/snippets.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
